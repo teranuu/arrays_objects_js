@@ -2,12 +2,44 @@
 <html>
 
 <head>
-    <title></title>
+    <title>arrays and objects in javascript</title>
 </head>
 
 <body>
 
+    <p id="demo"></p>
     
 </body>
+
+<script>
+
+
+
+    let num = 0;
+    let message = "";
+
+    const movies = ["Sample1", "Sample2", "Sample3", "Sample4", "Sample5"];
+
+    for (let i of movies){
+        message += i + "<br>";
+    }
+
+    document.getElementById("demo").innerHTML = message;
+
+    
+    
+    // message = `${numbers}`;
+    // document.getElementById("demo").innerHTML = message;
+
+    /*
+
+    exer:
+    print all content using for
+    add new content to end
+    remove first content
+    use map() function to convert content to uppercase
+    */
+
+</script>
 
 </html>
