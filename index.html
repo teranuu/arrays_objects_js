@@ -8,7 +8,7 @@
 <body>
 
     <p id="demo"></p>
-    
+    <p id="demo2"></p>
 </body>
 
 <script>
@@ -17,6 +17,14 @@
 
     let num = 0;
     let message = "";
+   
+
+    let person = {
+        name : "Denn",
+        age : 21,
+        isStudent : true
+        
+    };
 
     const movies = ["Sample1", "Sample2", "Sample3", "Sample4", "Sample5"];
 
@@ -32,15 +40,15 @@
         message += i + "<br>";
     }
 
-
-    document.getElementById("demo").innerHTML = message;
-
     
-    
-    //  message = `${numbers}`;
-    //  document.getElementById("demo").innerHTML = message;
+     message = `${message}`;
+     document.getElementById("demo").innerHTML = message;
 
     
+    const messageMovies = `Hello my name is ${person.name}, and I am ${person.age} years old`;
+    newMessageMovies = messageMovies.toUpperCase();
+    message = newMessageMovies;
+    document.getElementById("demo2").innerHTML = message;
 
     // exer:
     // print all content using for
