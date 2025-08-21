@@ -24,21 +24,30 @@
         message += i + "<br>";
     }
 
+    movies.push("Sample6"); //add content to end
+    movies.shift(); //remove first content
+    let newMovies = movies.map(movie => movie.toUpperCase()); //convert movies to uppercase
+
+     for (let i of newMovies){
+        message += i + "<br>";
+    }
+
+
     document.getElementById("demo").innerHTML = message;
 
     
     
-    // message = `${numbers}`;
-    // document.getElementById("demo").innerHTML = message;
+    //  message = `${numbers}`;
+    //  document.getElementById("demo").innerHTML = message;
 
-    /*
+    
 
-    exer:
-    print all content using for
-    add new content to end
-    remove first content
-    use map() function to convert content to uppercase
-    */
+    // exer:
+    // print all content using for
+    // add new content to end
+    // remove first content
+    // use map() function to convert content to uppercase
+    
 
 </script>
 
