@@ -14,69 +14,71 @@
 <script>
 
 
-    const sample = {
-        name : fullName,
-        age : years
-    }
-    const { age = 21 } = sample;
-    console.log(fullName);
-    console.log(years);
+
+    // const sample = {
+    //     name : fullName,
+    //     age : years
+    // }
+    
+    // const { age = 21 } = sample;
+    // console.log(fullName);
+    // console.log(years);
 
     // message =`I am ${age} years old`;
 
     // document.getElementById("demo").innerHTML = message;
-    // let message = "";
+    let message = "";
    
 
-    // let person = {
-    //     name : "Denn",
-    //     age : 21,
-    //     isStudent : true
+    let person = {
+        name : "Denn",
+        age : 21,
+        isStudent : true
         
-    // };
+    };
 
-    // const movies = ["Sample1", "Sample2", "Sample3", "Sample4", "Sample5"];
+    const movies = ["Sample1", "Sample2", "Sample3", "Sample4", "Sample5"];
 
-    // function myFunction(item){
+    function myFunction(item){
         
-    //     message += item + "<br>";
+        message += item + "<br>";
 
-    // }
+    }
 
-    // movies.push("Sample6"); //add content to end
-    // movies.shift(); //remove first content
-    // let newMovies = movies.map(movie => movie.toUpperCase()); //convert movies to uppercase
+    movies.push("Sample6"); //add content to end
+    movies.shift(); //remove first content
+    let newMovies = movies.map(movie => movie.toUpperCase()); //convert movies to uppercase
 
-    // //  for (let i of newMovies){
-    // //     message += i + "<br>";
-    // // }
-
-    // for(let i = 0; i < movies.length ; i++){
-    //     message += movies[i] + "<br>";
-    // }
-    // message += "<br>";
-
-    //  for (let i of movies){
+    //  for (let i of newMovies){
     //     message += i + "<br>";
     // }
 
-    //  message += "<br>";
+    for(let i = 0; i < movies.length ; i++){
+        message += movies[i] + "<br>";
+    }
+    message += "<br>";
+
+     for (let i of movies){
+        message += i + "<br>";
+    }
+
+     message += "<br>";
      
-    // movies.forEach(myFunction);
+    movies.forEach(myFunction);
     
-    //  message = `${message}`;
-    //  document.getElementById("demo").innerHTML = message;
+     message = `${message}`;
+     document.getElementById("demo").innerHTML = message;
 
     
-    // const messageMovies = `Hello my name is ${person.name}, and I am ${person.age} years old`;
-    // message = messageMovies;
-    // document.getElementById("demo2").innerHTML = message;
+    const messageMovies = `Hello my name is ${person.name}, and I am ${person.age} years old`;
+    message = messageMovies;
+    document.getElementById("demo2").innerHTML = message;
 
-    // // exer:
-    // // print all content using for
-    // // add new content to end
-    // // remove first content
-    // // use map() function to convert content to uppercase
+    // exer:
+    // print all content using for
+    // add new content to end
+    // remove first content
+    // use map() function to convert content to uppercase
     
 
 </script>
